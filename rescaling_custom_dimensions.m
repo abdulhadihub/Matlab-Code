@@ -21,7 +21,7 @@ B = zeros(R, C, 'double');
 % Perform the value mapping
 for i = 1:R
     for j = 1:C
-        B(i, j) = ((double(A(i, j)) - rmin) * (smax - smin) / (rmax - rmin)) + smin;
+        B(i, j) = ((double(A(i, j)) - rmin) * (smax - smin) / (rmax - rmin)) + smin ;
     end
 end
 
