@@ -3,6 +3,7 @@ original_image = imread('C:\Users\Abdul Hadi\Desktop\test images\006.jpeg');
 
 % Convert the image to grayscale
 A = rgb2gray(original_image);
+A = im2double(A);
 
 % Get the dimensions of the grayscale image
 [R, C] = size(A);
@@ -27,9 +28,9 @@ B = uint8(B);
 % Display the original and mapped images
 figure;
 subplot(1, 2, 1);
-imshow(A);
+imshow(A, []);
 title('Original Image');
 
 subplot(1, 2, 2);
-imshow(B);
+imshow(B, []);
 title('Mapped Image');
